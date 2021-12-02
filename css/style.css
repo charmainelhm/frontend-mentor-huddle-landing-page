@@ -1,0 +1,57 @@
+:root {
+  --font-heading: "Poppins", Helvetica, Arial, sans-serif;
+  --font-body: "Open Sans", Helvetica, Arial, sans-serif;
+
+  --color-primary: #00252e;
+  --color-secondary: #808d99;
+  --color-accent: #ff52bf;
+  --color-background: #ebfbff;
+  --color-shadow: rgb(214, 214, 214);
+
+  --fs-xl: 3.2rem;
+  --fs-600: 2.5rem;
+  --fs-500: 2rem;
+  --fs-400: 1.8rem;
+  --fs-300: 1.5rem;
+  --fs-200: 1.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-400);
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-size: var(--fs-600);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
