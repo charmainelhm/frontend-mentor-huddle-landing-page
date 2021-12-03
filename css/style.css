@@ -97,6 +97,7 @@ p {
 }
 
 .card__text {
+  font-size: var(--fs-500);
   color: var(--color-secondary);
 }
 
