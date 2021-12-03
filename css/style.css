@@ -120,3 +120,25 @@ p {
   width: 25%;
   max-width: 200px;
 }
+
+/* Hero */
+.hero {
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-background);
+  text-align: center;
+  padding: 3.5rem;
+}
+
+.hero__title {
+  line-height: 1.5;
+}
+
+.hero__text {
+  margin-bottom: 2em;
+}
+
+.hero__img {
+  margin-top: 3em;
+  width: 100%;
+}
