@@ -108,3 +108,15 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 25%;
+  max-width: 200px;
+}
