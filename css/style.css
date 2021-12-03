@@ -173,6 +173,7 @@ p {
 
 /* Footer */
 footer {
+  padding: 12rem 2rem 5rem;
   background: var(--color-primary);
   color: white;
 }
@@ -228,4 +229,13 @@ footer {
 .footer__link:hover,
 .footer__link:focus {
   opacity: 0.8;
+}
+
+footer .social-button {
+  padding: 3rem 0;
+}
+
+.copyright {
+  font-size: var(--fs-200);
+  text-align: center;
 }
