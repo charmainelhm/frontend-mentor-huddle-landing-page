@@ -104,6 +104,14 @@ p {
   height: 35px;
   border: 1px solid white;
   border-radius: 50%;
+  transition: all 0.1s ease-out;
+}
+
+.button-wrapper:hover,
+.button-wrapper:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  opacity: 0.8;
 }
 
 /* Card */
@@ -223,12 +231,12 @@ footer {
   font-size: var(--fs-500);
   color: white;
   text-decoration: none;
-  transition: opacity 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .footer__link:hover,
 .footer__link:focus {
-  opacity: 0.8;
+  border-bottom: 1px solid white;
 }
 
 footer .social-button {
