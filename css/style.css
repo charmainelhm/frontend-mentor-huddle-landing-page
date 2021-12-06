@@ -8,12 +8,12 @@
   --color-background: #ebfbff;
   --color-shadow: rgb(236, 236, 236);
 
-  --fs-xl: 3rem;
-  --fs-600: 2.5rem;
-  --fs-500: 1.8rem;
-  --fs-400: 1.7rem;
-  --fs-300: 1.5rem;
-  --fs-200: 1.2rem;
+  --fs-xl: 2.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.7rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1.4rem;
+  --fs-200: 1.1rem;
 }
 
 *,
@@ -190,14 +190,16 @@ p {
 }
 
 .section-last {
-  margin-bottom: 30rem;
+  margin-bottom: 25rem;
 }
 
 /* Call-out */
 .call-out {
   background: white;
   position: absolute;
-  bottom: -450px;
+  /* left: 50%; */
+  bottom: -400px;
+  /* transform: translateX(-50%); */
   box-shadow: none;
 }
 
@@ -215,7 +217,7 @@ p {
 
 /* Footer */
 footer {
-  padding: 18rem 2rem 5rem;
+  padding: 16rem 2rem 5rem;
   background: var(--color-primary);
   color: white;
 }
