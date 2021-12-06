@@ -16,6 +16,17 @@
   --fs-200: 1.1rem;
 }
 
+@media screen and (min-width: 900px) {
+  :root {
+    --fs-xl: 3.2rem;
+    --fs-600: 2.5rem;
+    --fs-500: 1.8rem;
+    --fs-400: 1.7rem;
+    --fs-300: 1.5rem;
+    --fs-200: 1.4rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +36,7 @@
 
 .container {
   width: 90%;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -154,7 +166,7 @@ p {
 
 .header__logo {
   width: 30%;
-  max-width: 200px;
+  max-width: 130px;
 }
 
 /* Hero */
@@ -206,13 +218,24 @@ p {
 .call-out::before {
   content: "";
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 0 35px 2px var(--color-shadow);
+  box-shadow: 0 0 15px 2px var(--color-shadow);
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 100px;
+  bottom: 50%;
+}
+
+@media screen and (min-width: 470px) {
+  .call-out {
+    width: 60%;
+    max-width: 700px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -320px;
+  }
 }
 
 /* Footer */
@@ -275,11 +298,87 @@ footer {
   border-bottom: 1px solid white;
 }
 
-footer .social-button {
+.social-button {
   padding: 3rem 0;
 }
 
 .copyright {
   font-size: var(--fs-200);
   text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    padding: 2em 0 1.5em;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .flex {
+    align-items: flex-start;
+  }
+
+  .hero {
+    background-image: url(../images/bg-hero-desktop.svg);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4em;
+  }
+
+  .hero__content {
+    width: 40%;
+    text-align: start;
+  }
+
+  .hero__img {
+    width: 55%;
+    margin-top: 0;
+  }
+
+  .card {
+    padding: 3em 7em;
+  }
+
+  .card__content {
+    width: 50%;
+    text-align: start;
+  }
+
+  .card__img {
+    width: 40%;
+  }
+
+  .section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-first,
+  .section-last {
+    flex-direction: row-reverse;
+  }
+
+  .footer__list {
+    width: 15%;
+  }
+
+  .list--icon {
+    width: 30%;
+  }
+
+  .social-button {
+    width: 20%;
+    text-align: start;
+    padding: 0;
+  }
+
+  .copyright,
+  .attribution {
+    text-align: end;
+  }
 }
