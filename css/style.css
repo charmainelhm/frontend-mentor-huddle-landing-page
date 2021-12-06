@@ -73,6 +73,7 @@ p {
   font-weight: 700;
   padding: 1.2em 4.5em;
   transition: opacity 0.1s ease-out;
+  box-shadow: 0 2px 30px 3px var(--color-shadow);
 }
 
 .btn:hover,
