@@ -71,7 +71,7 @@ p {
   color: white;
   font-size: var(--fs-300);
   font-weight: 700;
-  padding: 1em 3.5em;
+  padding: 1.2em 4.5em;
   transition: opacity 0.1s ease-out;
 }
 
@@ -180,6 +180,10 @@ p {
 }
 
 /* Sections */
+.main-section {
+  position: relative;
+}
+
 .section-first {
   margin-top: 7rem;
 }
@@ -188,9 +192,29 @@ p {
   margin-bottom: 30rem;
 }
 
+/* Call-out */
+.call-out {
+  background: white;
+  position: absolute;
+  bottom: -450px;
+  box-shadow: none;
+}
+
+.call-out::before {
+  content: "";
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 35px 2px var(--color-shadow);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+
 /* Footer */
 footer {
-  padding: 12rem 2rem 5rem;
+  padding: 18rem 2rem 5rem;
   background: var(--color-primary);
   color: white;
 }
