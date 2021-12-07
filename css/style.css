@@ -149,15 +149,6 @@ p {
   color: var(--color-secondary);
 }
 
-/* Attribution */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 /* Header */
 .header {
   padding-top: 1em;
@@ -305,6 +296,20 @@ footer {
 .copyright {
   font-size: var(--fs-200);
   text-align: center;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 37%, 82%);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: hsl(162, 56%, 74%);
 }
 
 @media screen and (min-width: 900px) {
